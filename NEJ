@@ -1,0 +1,8 @@
+text = str(input("Skriv ner din idé!:"))
+nextline = ("\n")
+
+if text:
+    print("NEJ!")
+
+with open('En Idé', 'a') as f:
+    f.write('{}{}'.format(text, nextline))
